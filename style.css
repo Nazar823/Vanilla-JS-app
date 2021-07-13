@@ -1,0 +1,76 @@
+body {
+    background-color: #505050;
+    color: #ffffff;
+    font-family: "Arial";
+}
+
+.checked {
+    background-color: #ccc;
+    text-decoration: line-through;
+}
+#input_text {
+
+    margin: 8px;
+    text-align: left;
+    height: auto;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background-color: #ffdc32;
+}
+#input_text:hover, #input_text:focus {
+    background-color: #e5c430;
+}
+#input_item_div {
+    text-align: left;
+    background-color: #ffdc32;
+    margin: 0 auto;
+    max-width: 400px;
+    border: #b89d25 2px;
+    border-radius: 5px;
+}
+#add_button {
+    margin: 8px;
+    margin-left: auto;
+    /*display: block;*/
+    background-color: #e5c430;
+    border: #b89d25;
+    border-radius: 3px;
+}
+#add_button:hover {
+    background-color: #b89d25;
+}
+
+/******ВЫБОР ЦВЕТА******/
+.color_bts_div {
+    text-align: left;
+    margin-left: 8px;
+}
+.color_bts {
+    margin-bottom: 8px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+}
+.color_bts:hover{
+    background-image: url("/icons/check.png");
+}
+#lavand_bt {
+    background-color: #a088cd;
+}
+#blue_bt {
+    background-color: #2567b8;
+}
+#orange_bt {
+    background-color: #ff7700;
+}
+#yellow_bt {
+    background-color: #e5c430;
+}
+#green_bt {
+    background-color: #127f12;
+}
+#red_bt {
+    background-color: #d50e0e;
+}
