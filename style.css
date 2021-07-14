@@ -1,76 +1,113 @@
 body {
-    background-color: #505050;
-    color: #ffffff;
-    font-family: "Arial";
+    font-family: "Times new roman";
 }
-
+.title {
+    text-align: left;
+    font-size: 20px;
+}
+.item {
+    color: white;
+    background-color: #d50e0e;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: white solid 1px;
+}
+.item_checked {
+    text-decoration: line-through;
+    color: black;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: white solid 1px;
+}
+.item_check {
+    margin: 12px;
+}
+.item_text {
+    border-left: white solid 1px;
+    padding: 10px;
+    margin: 0px;
+}
 .checked {
     background-color: #ccc;
     text-decoration: line-through;
 }
 #input_text {
-
+    flex: 5;
     margin: 8px;
     text-align: left;
     height: auto;
     border-radius: 3px;
     outline: none;
     border: none;
-    font-size: 16px;
-    background-color: #ffdc32;
+    font-size: 14px;
+    /*background-color: #ffdc32;*/
 }
 #input_text:hover, #input_text:focus {
-    background-color: #e5c430;
+    /*background-color: #e5c430;*/
+}
+form {
+    padding: 2px;
+    display: flex;
+    border: #a7a7a7 solid 1px;
+    border-radius: 2px;
+    margin-top: 10px;
 }
 #input_item_div {
     text-align: left;
-    background-color: #ffdc32;
+    /*background-color: #ffdc32;*/
     margin: 0 auto;
     max-width: 400px;
-    border: #b89d25 2px;
+    border-color: #000;
+    border-width: 2px;
+    outline: #000 1px;
     border-radius: 5px;
 }
 #add_button {
-    margin: 8px;
-    margin-left: auto;
+    flex: 1;
+    width: 40px;
+    margin: 2px;
+    margin-left: 15px;
     /*display: block;*/
-    background-color: #e5c430;
-    border: #b89d25;
+    color: #FFFFFF;
+    background-color: #319E8C;
+    border: #319E8C;
+    font-size: 12px;
     border-radius: 3px;
-}
-#add_button:hover {
-    background-color: #b89d25;
 }
 
 /******ВЫБОР ЦВЕТА******/
 .color_bts_div {
-    text-align: left;
-    margin-left: 8px;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2px;
 }
 .color_bts {
-    margin-bottom: 8px;
-    border-radius: 3px;
+    border-radius: 1px;
+    width: 14px;
+    height: 14px;
     outline: none;
     border: none;
 }
-.color_bts:hover{
-    background-image: url("/icons/check.png");
-}
 #lavand_bt {
-    background-color: #a088cd;
+    background-color: #530cff;
 }
 #blue_bt {
-    background-color: #2567b8;
+    background-color: blue;
 }
 #orange_bt {
-    background-color: #ff7700;
+    background-color: #ffa400;
 }
-#yellow_bt {
-    background-color: #e5c430;
+#green_white_bt {
+    background-color: #00d669;
 }
 #green_bt {
-    background-color: #127f12;
+    background-color: green;
 }
 #red_bt {
-    background-color: #d50e0e;
+    background-color: red;
 }
