@@ -90,26 +90,29 @@ function create_item(id_arg, text_arg, check_arg, color_arg){
     draw_item(myTask);
 }
 
+function submit() {
+    alert("Submit")
+}
+
+
 function add_item(){
     let inp_text = document.querySelector("#input_text");
-    if (inp_text.value === ""){
+    if ((inp_text.value.trim()) === ""){
         return alert("Форма пустая!");
     }
     if (!current_color){
         current_color = getRandomColor();
     }
-    create_item(items_arr.length, inp_text.value, false, current_color);
+    create_item(items_arr.length, inp_text.value.trimLeft().trimRight(), false, current_color);
     inp_text.value = "";
     current_color = null;
     if (selectedColorId){
         document.querySelector("#"+selectedColorId).style.border = "black solid 0px";
     }
     selectedColorId = null;
-    console.log(items_arr)
 }
 function changeCheckBox(){
     for (let i = 0; i < items_arr.length; i++){
-        console.log("i=", i, "   items_arr.length=", items_arr.length);
         if (document.querySelector("#check-" + i).checked){
             items_arr[i].checked = true;
             document.querySelector("#item-" + i).className = "item_checked";
@@ -121,15 +124,12 @@ function changeCheckBox(){
         }
         localStorage.setItem("task_list", JSON.stringify(items_arr));
     }
-    console.log(items_arr);
 }
 window.onload = function itemsFromLocalStorage(){
-    console.log("Загрузка страницы, пустой массив => ",items_arr);
     items_arr = JSON.parse(localStorage.getItem("task_list"));
     if (items_arr === null){
         items_arr = [];
     }
-    console.log("Массив получен => " ,items_arr);
     items_arr.forEach(item => draw_item(item));
     changeCheckBox();
 }
