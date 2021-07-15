@@ -7,7 +7,7 @@ body {
 }
 .item {
     color: white;
-    background-color: #d50e0e;
+    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -92,22 +92,4 @@ form {
     height: 14px;
     outline: none;
     border: none;
-}
-#lavand_bt {
-    background-color: #530cff;
-}
-#blue_bt {
-    background-color: blue;
-}
-#orange_bt {
-    background-color: #ffa400;
-}
-#green_white_bt {
-    background-color: #00d669;
-}
-#green_bt {
-    background-color: green;
-}
-#red_bt {
-    background-color: red;
 }
