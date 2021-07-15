@@ -6,6 +6,8 @@ body {
     font-size: 20px;
 }
 .item {
+    word-wrap: break-word;
+    word-break: break-word;
     color: white;
     background-color: #000000;
     display: flex;
@@ -14,6 +16,8 @@ body {
     border: white solid 1px;
 }
 .item_checked {
+    word-wrap: break-word;
+    word-break: break-word;
     text-decoration: line-through;
     color: black;
     background-color: #ccc;
